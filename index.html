@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Cloudinary</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="dropbox">
+        <h1>Subir a Cloudinary del lado Cliente con JavaScript</h1>
+
+        <p><b>cloudName</b>= 'muchosregistros'</p>
+        <p><b>unsigned Upload Preset</b>= 'bbisdqo0'</p>
+
+        Learn more in this blog post -
+        <a href="https://cloudinary.com/blog/direct_upload_made_easy_from_browser_or_mobile_app_to_the_cloud">
+            Direct upload made easy from browser or mobile app to the cloud</a>
+
+        <h2>https://codepen.io/team/Cloudinary/pen/QgpyOK</h2>
+
+        <form class="my-form">
+            <div class="form_line">
+                <h4>Subir multiples archivos dando click en enlace o arrastrando y soltando imagenes dentro de la region
+                </h4>
+
+                <div class="form_controls">
+                    <div class="upload_button_holder">
+                        <input type="file" id="fileElem" multiple accept="image/*" style="display:none"
+                            onchange="handleFiles(this.files)">
+                        <a href="#" id="fileSelect">Selecciona algunos archivos</a>&nbsp;&nbsp;
+                        <a href="#" id="urlSelect">URL Upload</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="progress-bar" id="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div id="gallery"></div>
+    </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
